@@ -1,0 +1,9 @@
+POST http://localhost:3000/searchbycategory
+content-type: application/json
+
+{"jobCategory":"Accounting"}
+
+###
+
+
+GET http://localhost:3000
