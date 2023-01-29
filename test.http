@@ -4,6 +4,11 @@ content-type: application/json
 {"jobCategory":"Accounting"}
 
 ###
-
-
 GET http://localhost:3000
+
+###
+
+POST https://erin-eager-indri.cyclic.app/searchbycategory
+content-type: application/json
+
+{"jobCategory":"IT"}
