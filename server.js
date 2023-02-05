@@ -17,7 +17,7 @@ app.get('/',(request,response)=>{
 app.post('/searchbycategory',(request,response)=>{
     let searchCriteria = request.body.jobCategory;
     console.log(`search=${searchCriteria}`);
-    let respData = data.filter(job => job.jobCategory === searchCriteria);
+    let respData = data.filter(job => job.jobCategory.toUpperCase() === searchCriteria);
     console.log(respData);
     response.json(respData);
 });
